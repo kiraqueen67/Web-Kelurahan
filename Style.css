@@ -1,0 +1,484 @@
+/* =====================
+   RESET
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =====================
+   BODY
+===================== */
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.85),
+        rgba(255,255,255,0.85)
+    ),
+    url("gambar/patung.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+}
+
+/* =====================
+   HEADER
+===================== */
+
+header{
+
+    background:white;
+
+    color:#2e7d32;
+
+    padding:12px 25px;
+
+    border-bottom:3px solid #2e7d32;
+
+}
+
+.header-kiri{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.header-kiri img{
+
+    width:50px;
+
+    height:auto;
+
+}
+
+.header-kiri h1{
+
+    margin:0;
+
+    font-size:28px;
+
+}
+
+.header-kiri p{
+
+    margin-top:3px;
+
+    font-size:13px;
+
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+nav{
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffffff;
+}
+
+/* =====================
+   HERO / PATUNG
+===================== */
+
+.hero{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),
+    url("images/patung.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    height:500px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    color:rgb(255, 255, 255);
+
+    text-align:center;
+
+    text-shadow:2px 2px 8px black;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* =====================
+   SECTION
+===================== */
+
+section{
+    padding:40px;
+    text-align:center;
+}
+
+section h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+/* =====================
+   GALERI
+===================== */
+
+#galeri img{
+
+    width:250px;
+
+    margin:10px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+#galeri img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* =====================
+   BUTTON DOWNLOAD
+===================== */
+
+.btn{
+
+    display:inline-block;
+
+    background:#1976d2;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    margin:10px;
+}
+
+.btn:hover{
+
+    background:#0d47a1;
+
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+
+    background:#1b5e20;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* =====================
+   ANIMASI HALAMAN
+===================== */
+
+body{
+
+    animation:fade 0.8s;
+
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/* =====================
+   NAVBAR INTERAKTIF
+===================== */
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    transition:0.3s;
+}
+
+nav a:hover{
+
+    background:white;
+
+    color:#1b5e20;
+
+    transform:scale(1.1);
+}
+
+nav a:active{
+
+    transform:scale(0.9);
+
+}
+
+/* =====================
+   HERO ANIMASI
+===================== */
+
+.hero h1{
+
+    font-size:55px;
+
+    animation:slideDown 1s;
+}
+
+.hero p{
+
+    font-size:20px;
+
+    animation:slideUp 1.2s;
+}
+
+@keyframes slideDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================
+   GALERI
+===================== */
+
+#galeri img{
+
+    width:250px;
+
+    margin:10px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+#galeri img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* =====================
+   BUTTON DOWNLOAD
+===================== */
+
+.btn{
+
+    display:inline-block;
+
+    background:#1976d2;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    margin:10px;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    background:#0d47a1;
+
+    transform:translateY(-3px);
+
+}
+
+/* =====================
+   WELCOME POPUP
+===================== */
+
+#welcome{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.6);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+}
+
+.welcome-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    width:320px;
+
+    animation:muncul 0.5s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.welcome-box h2{
+
+    color:#2e7d32;
+
+    margin-bottom:10px;
+}
+
+.welcome-box button{
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    background:#2e7d32;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.welcome-box button:hover{
+
+    background:#1b5e20;
+
+    transform:scale(1.05);
+}
+
+@keyframes muncul{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
