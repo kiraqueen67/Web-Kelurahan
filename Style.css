@@ -161,9 +161,13 @@ section h2{
    GALERI
 ===================== */
 
-#galeri img{
+section img{
 
-    width:250px;
+    width:80%;
+
+    max-width:500px;
+
+    height:auto;
 
     margin:10px;
 
@@ -172,9 +176,11 @@ section h2{
     transition:0.3s;
 }
 
-#galeri img:hover{
+section img:hover{
 
     transform:scale(1.05);
+
+}
 
 }
 
