@@ -494,9 +494,13 @@ nav a:active{
 
     .header-kiri{
 
-        flex-direction:column;
+    flex-direction:row;
 
-        text-align:center;
+    justify-content:center;
+
+    text-align:left;
+
+    }
 
     }
 
@@ -522,23 +526,27 @@ nav a:active{
 
     nav{
 
-        display:flex;
+    display:flex;
 
-        flex-wrap:wrap;
+    justify-content:center;
 
-        justify-content:center;
+    align-items:center;
 
-        gap:8px;
+    flex-wrap:nowrap;
 
-    }
+    gap:3px;
 
-    nav a{
+}
 
-        margin:5px;
+nav a{
 
-        padding:8px 12px;
+    margin:0;
 
-        font-size:14px;
+    padding:6px;
+
+    font-size:13px;
+
+}
 
     }
 
