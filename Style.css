@@ -615,3 +615,122 @@ nav a{
     }
 
 }
+
+/* =====================
+   POTENSI HOME
+===================== */
+
+.potensi-home{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+
+}
+
+.card-potensi{
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(5px);
+
+    padding:10px;
+
+    border-radius:12px;
+
+    width:180px;
+
+}
+
+.card-potensi img{
+
+    width:100%;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.card-potensi h3{
+
+    margin-top:10px;
+
+    color:white;
+
+}
+
+/* =====================
+   CONTACT US
+===================== */
+
+.contact-home{
+
+    margin-top:30px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(5px);
+
+    padding:20px;
+
+    border-radius:15px;
+
+    width:90%;
+
+    max-width:500px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.contact-home h3,
+.contact-home p{
+
+    color:white;
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+
+        height:auto;
+
+        padding:60px 20px;
+
+    }
+
+    .potensi-home{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .card-potensi{
+
+        width:90%;
+
+        max-width:320px;
+
+    }
+
+    .contact-home{
+
+        width:95%;
+
+    }
+
+}
